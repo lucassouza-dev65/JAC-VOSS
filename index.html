@@ -247,12 +247,12 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 1px solid rgba(160,200,255,0.18);
-    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(160,200,255,0.08);
+    background: rgba(255,255,255,0.02);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.55);
   }
 
   .hero-feature-label {
@@ -1449,9 +1449,9 @@
       grid-template-columns: 1fr;
     }
 
-    /* Reduz espaço logo após a hero no mobile */
-    .hero + .section-light {
-      padding-top: 44px;
+    /* Logo centralizada no mobile */
+    .hero-nav .container {
+      justify-content: center;
     }
 
     /* Hero mobile: single column, no desktop photo */
