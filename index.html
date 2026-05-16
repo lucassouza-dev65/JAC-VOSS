@@ -475,6 +475,7 @@
   .section-form {
     background: var(--light-bg);
     padding: 80px 0;
+    overflow-x: hidden;
   }
 
   .form-grid {
@@ -1741,12 +1742,40 @@
     /* Reduz espaço vazio ANTES de "Com quem você vai aprender" */
     .section-instructor { padding-top: 32px; }
     /* Reduz espaço antes do formulário */
-    .section-form { padding-top: 28px; }
+    .section-form { padding-top: 28px; padding-left: 0; padding-right: 0; }
+
+    /* Form left — evita vazamento do título no mobile */
+    .form-left h2 {
+      font-size: clamp(22px, 6vw, 32px);
+      word-break: break-word;
+    }
+
+    .form-grid {
+      gap: 28px;
+      padding: 0 4px;
+    }
 
     /* Centraliza botão do form no mobile */
     .form-card .btn-cta {
       text-align: center;
       justify-content: center;
+    }
+
+    /* SendPulse form — evita vazamento lateral no mobile */
+    .sp-form[sp-id="253607"] {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      padding: 12px !important;
+    }
+    .sp-form[sp-id="253607"] .sp-form-fields-wrapper {
+      width: 100% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    .sp-form[sp-id="253607"] .sp-form-control {
+      box-sizing: border-box !important;
+      width: 100% !important;
     }
   }
 </style>
