@@ -118,7 +118,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
     animation: fadeUp 0.7s ease both;
   }
 
@@ -524,13 +524,9 @@
 
 <!-- NAV -->
 <nav>
-  <div class="container">
+  <div class="container" style="justify-content:center;">
     <div class="logo">
       <img src="logo-voss.png" alt="VOSS Logo">
-      <div>
-        <div class="logo-text">VOSS</div>
-        <div class="logo-sub">JAC — Jornada de Aprimoramento Clínico</div>
-      </div>
     </div>
   </div>
 </nav>
@@ -562,7 +558,7 @@
 
       <!-- SUBTÍTULO -->
       <p class="obrigado-sub">
-        Bem-vindo(a) à <strong>Jornada de Aprimoramento Clínico</strong>. Você receberá o link das aulas no seu e-mail com antecedência — fique de olho na caixa de entrada (e no spam, só por garantia).
+        Bem-vindo(a) à <strong>Jornada de Aprimoramento Clínico</strong>.
       </p>
 
       <div class="divider"></div>
@@ -580,7 +576,7 @@
             </div>
           </div>
           <p style="font-size:14px;color:var(--white-80);line-height:1.7;margin-bottom:18px;">
-            No Grupo VIP, você recebe <strong style="color:var(--white);">materiais exclusivos</strong>, avisos e bastidores da jornada antes de todo mundo.
+            APENAS no grupo VIP você receberá materiais exclusivos, avisos e bastidores da jornada antes de todo mundo.
           </p>
           <!-- COPY EDITÁVEL: substitua o href pelo link real do grupo VIP -->
           <a href="https://chat.whatsapp.com/SEU_LINK_AQUI" target="_blank" class="btn-wpp">
@@ -599,7 +595,7 @@
           </div>
           <div class="info-card-text">
             <strong>Fique de olho no seu e-mail</strong>
-            <p>O link das aulas será enviado por e-mail. Verifique também a caixa de entrada e o spam.</p>
+            <p>O link das aulas também será enviado por e-mail. Verifique também a caixa de entrada e o spam.</p>
           </div>
         </div>
 
@@ -619,10 +615,18 @@
         <h3>Você ganhou uma <span>Aula Bônus</span></h3>
         <p>Por se inscrever na JAC, você tem acesso a um conteúdo exclusivo preparado especialmente para quem quer ir além.</p>
 
-        <!-- ESPAÇO RESERVADO PARA A AULA BÔNUS -->
-        <div class="bonus-placeholder">
-          <strong>[ Aula Bônus ]</strong>
-          <p>Insira aqui o título, link ou embed da aula bônus.</p>
+        <!-- EMBED YOUTUBE AULA BÔNUS -->
+        <!-- COPY EDITÁVEL: troque o ID do vídeo abaixo pelo ID correto do YouTube -->
+        <!-- Atenção: o vídeo precisa ter embedding habilitado nas configurações do YouTube -->
+        <div style="margin-top:18px;border-radius:12px;overflow:hidden;position:relative;padding-bottom:56.25%;height:0;">
+          <iframe
+            src="https://www.youtube.com/embed/jNQXAC9IVRw"
+            title="Aula Bônus JAC"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;">
+          </iframe>
         </div>
       </div>
 
